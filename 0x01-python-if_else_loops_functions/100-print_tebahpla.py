@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-count = 0
-for c in range(ord('z'), ord('a') - 1, -1):
-    print("{}".format(chr(c - count)), end="")
-    count = 32 if count == 0 else 0
+for a in range(ord('z'), ord('a') - 1, -1):
+    if (a % 2) != 0:
+        a = a - (ord('a') - ord('A'))
+    print("{:c}".format(a), end='')

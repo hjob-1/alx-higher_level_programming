@@ -1,26 +1,19 @@
 #!/usr/bin/python3
+"""
+File: 0-add_integer.py
+Desc: This module supplies one function, add_integer(a, b)
+Author: Ilodiuba Victor (victornnamdii)
+Date Created: Jul 23 2022
+"""
 
-"""
-    My addition module
-"""
 
 def add_integer(a, b=98):
-    """Adds two integers
-    Args:
-        a (int or float): First parameter
-        b (int or float): Second Parameter
-    Returns:
-        int: The sum of the two numbers
-    Raises:
-        TypeError: If a or b are not integers or floats
     """
-    if type(a) is float:
-        a = int(a)
-    if type(b) is float:
-        b = int(b)
-    if not type(a) is int:
+    This function computes the addition of two numbers
+    """
+    if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
-    elif not type(b) is int:
+    if type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
-    else:
-        return a + b
+
+    return int(a) + int(b)

@@ -1,19 +1,18 @@
 #!/usr/bin/python3
 """
-    My name concatenator module
+File: 3-say_my_name.py
+Desc: This module contains one function: say_my_name(first_name, last_name="")
+Author: Ilodiuba Victor (victornnamdii)
+Date Created: 23 Jul 2022
 """
 
+
 def say_my_name(first_name, last_name=""):
-    """Prints a concatenated name (<first name> <last name>)
-    Args:
-        first_name(str): The first name
-        last_name(str): The last name
-    Raises:
-        TypeError:  If first_name and last_name are not strings
     """
-    # Checks if the first_name and last_name are stringss
-    if not type(first_name) is str:
+    This function prints My name is <first name> <last name>
+    """
+    if type(first_name) is not str:
         raise TypeError("first_name must be a string")
-    if not type(last_name) is str:
-        raise TypeError("first_name must be a string")
-    print("My name is {} {}".format(first_name, last_name))
+    if type(last_name) is not str:
+        raise TypeError("last_name must be a string")
+    print("My name is {:s} {:s}".format(first_name, last_name))

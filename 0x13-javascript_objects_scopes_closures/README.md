@@ -1,1 +1,1 @@
-Practicing javascript objects
+JavaScript - Objects, Scopes and Closures
